@@ -2,9 +2,23 @@
 <html lang="fr">
 
 <head>
-<!--#include file="partials/head.shtml" -->
+
+
+
+
+
     <title>Admin: Connexion</title>
 </head>
+
+<?php
+
+// header
+require_once __DIR__ . "/layout/header.php";
+?>
+
+<h1 class="h2">Dashboard</h1>
+
+
 
 <body>
     <div class="container bg-light">
@@ -14,7 +28,7 @@
                     <h3 class="Display-4">Console d'administration</h3>
                     <div class="navbar-brand">
                         <a class="navbar-item">
-                        <!--#include file="svg/logo.shtml" -->
+                            <?php require_once __DIR__ . "/src/svg/logo--small.html"; ?>
                         </a>
                     </div>
                     <p class="lead">Connexion requise...</p>
@@ -29,15 +43,19 @@
                     </form>
                     <p class="mt-4">
                         <a href="mailto:admin@artforartshake.com?subject=Demande%20de%20code">Demande de code d'accès</a>
-                        &nbsp; &bullet; &nbsp;
+                        &nbsp;&nbsp; &bullet; &nbsp;
                         <a href="mailto:admin@artforartshake.com?subject=Oubli%20password">Mot de passe oublié</a>
                     </p>
-                    </div>
                 </div>
             </div>
-        </main>
+        </div>
     </div>
     <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
 </body>
 
 </html>
+
+<?php
+// footer
+require_once __DIR__ . "/layout/footer.php";
+?>

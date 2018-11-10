@@ -1,12 +1,20 @@
+# Dossiers volumineux
 assets/
+
+# Dossiers générés par npm et scipts
 dist/
 node_modules/
 
+# Fichier de config actif (serveur local)
+config/parameters.php
+
+# Fichiers de MySQLWorkbench
 *.bak
 
-# Created by https://www.gitignore.io/api/windows
+# Fichiers de PHP Storm
+.idea/
 
-### Windows ###
+### Windows - Created by https://www.gitignore.io/api/windows ###
 # Windows thumbnail cache files
 Thumbs.db
 ehthumbs.db
@@ -30,5 +38,3 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
-
-# End of https://www.gitignore.io/api/windows

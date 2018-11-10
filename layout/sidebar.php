@@ -1,17 +1,17 @@
-<!-- Sidebar imported from partials/sidebar.shtml -->
-
+<!-- Sidebar -->
 <nav class="navbar">
 
     <!-- Sidebar header -->
     <div class="navbar-brand">
         <div class="logo--small">
-            <!--#include file="../svg/logo--small.shtml" -->
+            <?php require_once __DIR__ . "/../src/svg/logo--small.html"; ?>
         </div>
     </div>
     
     <!-- Sidebar menu -->
     <div class="sidebar-menu">
         <ul class="nav flex-column">
+            <!-- connected user username -->
             <li class="text-secondary">
                 <p>Olivier Valette</p>
             </li>
@@ -50,5 +50,5 @@
             </li>
         </ul>
     </div>
-        
+
 </nav>

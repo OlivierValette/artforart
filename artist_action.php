@@ -1,28 +1,21 @@
-<!DOCTYPE html>
-<html lang="fr">
+<!-- HEAD -->
+<?php require_once __DIR__ . "/layout/head.php"; ?>
 
-<head>
-    <!--#include file="partials/head.shtml" -->
-    <title>Admin: Oeuvres</title>
-</head>
-
-<body>
-
-    <!-- HEADER : Barre de navigation haute -->
-    <!--#include file="partials/header.shtml" -->
+<!-- HEADER : top navbar -->
+<?php require_once __DIR__ . "/layout/header.php"; ?>
 
     <main class="container-fluid">
         <div class="row align-items-start">
 
-            <!-- Barre de navigation gauche (colonne 1) -->
+            <!-- Sidebar (colonne 1) -->
             <div class="col-2">
-                <!--#include file="partials/sidebar.shtml" -->
+                <?php require_once __DIR__ . "/layout/sidebar.php"; ?>
             </div>
 
             <!-- Contenu (colonne 2) -->
             <div class="col-10">
 
-                <!-- Détail d'une oeuvre -->
+                <!-- Artist details -->
                 <div class="artwork">
 
                     <!-- Informations sur l'artiste -->
@@ -311,129 +304,18 @@
                             </div>
                         </div>
                         
-                        <!-- Informations sur l'oeuvre -->
-                        <div class="row">
-                            
-                            <!-- Formulaires en partie gauche (colonne 1) -->
-                            <div class="col-7">
-                                <h2 class="subtitle"> &OElig;uvre</h2>
-                                <div class="form-group row">
-                                        <label for="artwork__title" class="col-sm-2 col-form-label">Titre</label>
-                                        <div class="col-sm-10">
-                                            <input type="text" class="form-control input" id="artwork__title" name="awtitle" placeholder="Lepanto VII" required>
-                                        </div>
-                                </div>
-                                <div class="form-group row">
-                                        <label for="artwork__date" class="col-sm-2 col-form-label">Année</label>
-                                        <div class="col-sm-10">
-                                            <input type="number" class="form-control input" id="artwork__date" name="awdate" placeholder="2001" min="500" max="2050">
-                                        </div>
-
-                                        <label for="artwork__date-ca" class="form-check-label"></label>
-                                        <div class="col-sm-10 offset-sm-2">
-                                            <input type="checkbox" class="form-check-input input" id="artwork__date-ca" name="awdateca" value="ca.">ca.
-                                        </div>
-                                </div>
-                                <div class="form-group row">
-                                        <label for="artwork__medium" class="col-sm-2 col-form-label">Médium</label>
-                                        <div class="col-sm-10">
-                                            <input type="text" class="form-control input" id="artwork__medium" name="awmedium" placeholder="Acrylic , wax crayon and graphite on canvas">
-                                        </div>
-                                </div>
-                                <div class="form-group row">
-                                    <label for="artwork__dims" class="col-sm-2 col-form-label">Dimensions (L&nbsp;x&nbsp;l&nbsp;x&nbsp;H)</label>
-                                    <div class="col-sm-10">
-                                        <input type="text" class="form-control input" id="artwork__dims" name="awdimensions" placeholder="216.5 × 340.4 cm">
-                                    </div>
-                                </div>
-                                <div class="form-group row">
-                                    <label for="artwork__copyr" class="col-sm-2 col-form-label">Droits</label>
-                                    <div class="col-sm-10">
-                                        <input type="text" class="form-control input" id="artwork__copyr" name="awcopyr" placeholder="© Cy Twombly Foundation">
-                                    </div>
-                                </div>
-                                <div class="form-group row">
-                                    <label for="artwork__mvt" class="col-sm-2 col-form-label">Mouvement</label>
-                                    <div class="col-sm-10">
-                                        <input type="text" class="form-control input" id="artwork__mvt" name="awtitle" placeholder="Expressionnisme abstrait" required>
-                                    </div>
-                                </div>
-                                <div class="form-group row">
-                                    <label for="artwork__loc" class="col-sm-2 col-form-label">Localisation</label>
-                                    <div class="col-sm-10">
-                                        <input type="text" class="form-control input" id="artwork__loc" name="awmvt" placeholder="Museum Brandhorst" required>
-                                    </div>
-                                </div>
-                                <div class="form-group row">
-                                    <div class="col-sm-10 offset-sm-2">
-                                        <div class="form-check-inline">
-                                            <label for="artwork__loc1" class="form-check-label">
-                                                <input type="radio" id="artwork__loc1" class="form-check-input" name="awtypeloc" value="museum">Musée
-                                            </label>
-                                        </div>
-                                        <div class="form-check-inline">
-                                            <label for="artwork__loc2" class="form-check-label">
-                                                <input type="radio" id="artwork__loc2" class="form-check-input" name="awtypeloc" value="gallery">Galerie
-                                            </label>
-                                        </div>
-                                        <div class="form-check-inline disabled">
-                                            <label for="artwork__loc3" class="form-check-label">
-                                                <input type="radio" id="artwork__loc3" class="form-check-input" name="awtypeloc" value="private">Collectionneur privé
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-group row">
-                                    <div class="col-sm-12">
-                                        <label for="artwork__desc">Descriptif</label>
-                                        <textarea class="form-control input" rows="5" id="artwork__desc" name="awdesc">Among the American artists who first came to prominence in the late 1950s, as the great juggernaut of Abstract Expressionism was waning, Cy Twombly (Lexington, Virginia 1928) remained closest to the earlier generation´s belief in the primacy of the gesture, developing an inimitable handwriting that became the essence of his painting along with the use of the word evoking mythological figures and events as an inherent compositional element and the gradual incorporation of color.
-                                        </textarea>
-                                    </div>
-                                </div>
-                                <br>
-                            </div>
-                        
-                            <!-- Image(s) en partie droite (colonne 2) -->
-                            <div class="col-5 mt-5">
-                                <img class="img-fluid rounded" 
-                                        src="../assets/Twombly, Cy (American, 1928-2011) - Lepanto VII, 2001.jpg"
-                                        alt="Twombly, Cy (American, 1928-2011) - Lepanto VII, 2001">
-
-                                        
-                                <div class="artwork__img mt-5 mb-1">
-                                    <div class="lead">
-                                        <label for="image_uploads">
-                                            <span class="fa fa-file-import mr-2"></span>Fichier image de l'&oelig;uvre à sélectionner :
-                                        </label>
-                                        <br>
-                                        <input type="file" id="image_uploads" class="img-load" accept=".jpg, .jpeg, .png" name="image_uploads">
-                                    </div>
-                                    <div class="img-preview">
-                                        <p>Aucun fichier sélectionné actuellement</p>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
                         <!-- Boutons de validation -->
-                        <div class="artwork__action text-center mb-5">
+                        <div class="artist__action text-center mb-5">
                             <button type="submit" class="btn btn-warning">Valider</button> &nbsp;
                             <button type="reset" class="btn btn-danger">Annuler</button>
                         </div>
-                            
                     </form>
-                    
                 </div>
-                
             </div>
-            
         </div>
-        
     </main>
-    
-    <!-- FOOTER -->
-    <!--#include file="partials/footer.shtml" -->
-    
-    <script src="js/main.js"></script>
 
-</body>
+<script src="js/main.js"></script>
+
+<!-- Footer -->
+<?php require_once __DIR__ . "/layout/footer.php"; ?>

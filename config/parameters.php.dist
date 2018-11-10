@@ -1,0 +1,14 @@
+<?php
+/** Copy of parameters.php as template for remote server */
+
+// site URL
+define("SITE_URL", "http://localhost/php/artforart/");
+
+// assets directory path
+define("UPLOAD_DIR", "assets/");
+
+//DB parameters
+define("DB_NAME", 'artforart');
+define("DB_HOST", 'localhost');
+define("DB_USER", 'root');
+define("DB_PASS", '');

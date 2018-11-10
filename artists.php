@@ -1,22 +1,15 @@
-<!DOCTYPE html>
-<html lang="fr">
+<!-- HEAD -->
+<?php require_once __DIR__ . "/layout/head.php"; ?>
 
-<head>
-	<!--#include file="partials/head.shtml" -->
-	<title>Admin: Artistes</title>
-</head>
-		
-<body>
+<!-- HEADER : top navbar -->
+<?php require_once __DIR__ . "/layout/header.php"; ?>
 
-	<!-- HEADER : Barre de navigation haute -->        
-	<!--#include file="partials/header.shtml" -->
-	
-	<main class="container-fluid">
-		<div class="row align-items-start">
+<main class="container-fluid">
+    <div class="row align-items-start">
 
-        <!-- Barre de navigation gauche (colonne 1) -->
+        <!-- Sidebar (colonne 1) -->
         <div class="col-2">
-		<!--#include file="partials/sidebar.shtml" -->
+            <?php require_once __DIR__ . "/layout/sidebar.php"; ?>
 		</div>
 	
 		<!-- Contenu (colonne 2) -->
@@ -203,13 +196,9 @@
 					</form>
 				</nav>
 			</footer>
-
         </div>
-        
-	</main>
+    </div>
+</main>
 
-    <!-- FOOTER -->        
-    <!--#include file="partials/footer.shtml" -->
-
-</body>
-</html>
+<!-- Footer -->
+<?php require_once __DIR__ . "/layout/footer.php"; ?>
