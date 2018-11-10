@@ -1,24 +1,5 @@
-<!DOCTYPE html>
-<html lang="fr">
-
-<head>
-
-
-
-
-
-    <title>Admin: Connexion</title>
-</head>
-
-<?php
-
-// header
-require_once __DIR__ . "/layout/header.php";
-?>
-
-<h1 class="h2">Dashboard</h1>
-
-
+<!-- HEAD -->
+<?php require_once __DIR__ . "/layout/head.php"; ?>
 
 <body>
     <div class="container bg-light">
@@ -50,12 +31,7 @@ require_once __DIR__ . "/layout/header.php";
             </div>
         </div>
     </div>
-    <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
-</body>
 
+</body>
 </html>
 
-<?php
-// footer
-require_once __DIR__ . "/layout/footer.php";
-?>
