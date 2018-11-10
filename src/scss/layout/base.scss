@@ -1,0 +1,29 @@
+// GENERAL CSS
+html,
+body {
+    background: rgb(220, 220, 220);
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.nav-item {
+    .btn,
+    .form-control,
+    .custom-file-label {
+        margin: 3px;
+    }
+}
+
+.text-bold {
+    font-weight: 700
+}
+
+.text-small {
+    font-size: 0.9rem
+}
+
+.text-xsmall {
+    font-size: 0.8rem
+}

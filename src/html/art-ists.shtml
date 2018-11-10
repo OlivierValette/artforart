@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<!--#include file="partials/head.shtml" -->
+	<title>Admin: Artistes</title>
+</head>
+		
+<body>
+
+	<!-- HEADER : Barre de navigation haute -->        
+	<!--#include file="partials/header.shtml" -->
+	
+	<main class="container-fluid">
+		<div class="row align-items-start">
+
+        <!-- Barre de navigation gauche (colonne 1) -->
+        <div class="col-2">
+		<!--#include file="partials/sidebar.shtml" -->
+		</div>
+	
+		<!-- Contenu (colonne 2) -->
+		<div class="col-10">
+
+			<!-- contextual header -->
+			<header class="artists__header mt-3 mb-3">
+				<div class="alert alert-primary lead" role="alert">
+					<p><strong>347</strong> artistes</p>
+				</div>
+				<nav class="navbar navbar-expand-lg navbar-dark bg-light">
+					<div class="nav-item">
+						<form class="form-inline my-2 my-lg-0" id="searchForm" action="#">
+							<input class="form-control mr-sm-2" type="search" placeholder="Recherche...">
+						</form>
+					</div>
+					<ul class="navbar-nav ml-auto mr-2 mt-md-0">
+						<li class="nav-item">
+							<div class="input-group">
+								<a href="#" class="btn btn-dark">
+									<span class="fa fa-print mr-2"></span> Imprimer
+								</a>
+							</div>
+						</li>
+						<li class="nav-item">
+							<div class="input-group">
+								<a href="art-ist.html" class="btn btn-dark">
+									<span class="fa fa-plus-circle mr-2"></span>Ajouter
+								</a>
+							</div>
+						</li>
+					</ul>
+				</nav>
+			</header>
+
+			<!-- Liste des artistes en catalogue -->
+			<div class="artists__list">
+				<table class="table table-bordered table-striped table-hover table-sm" cellspacing="0" width="100%">
+					<thead class="thead-light">
+						<tr>
+							<th scope="col">Nom</th>
+							<th scope="col">Prénom</th>
+							<th scope="col">Naissance</th>
+							<th scope="col">Décès</th>
+							<th scope="col">Pays</th>
+							<th scope="col">Actions</th>
+						</tr>
+					</thead>
+					<tbody class="artists__list">
+						<tr>
+							<td>Alechinsky</td>
+							<td>Pierre</td>
+							<td>1927</td>
+							<td>-</td>
+							<td>Franco-Belgian</td>
+							<td><a class="btn btn-warning" href="art-ist.html">Modifier</a> &nbsp;
+								<a class="btn btn-danger" href="#">Supprimer</a> </td>
+						</tr>
+						<tr>
+							<td>Avery</td>
+							<td>Milton Clarck</td>
+							<td>1885</td>
+							<td>1965</td>
+							<td>American</td>
+							<td><a class="btn btn-warning" href="art-ist.html">Modifier</a> &nbsp;
+								<a class="btn btn-danger" href="#">Supprimer</a> </td>
+						</tr>
+						<tr>
+							<td>Beckmann</td>
+							<td>Max</td>
+							<td>1884</td>
+							<td>1950</td>
+							<td>German</td>
+							<td><a class="btn btn-warning" href="art-ist.html">Modifier</a> &nbsp;
+								<a class="btn btn-danger" href="#">Supprimer</a> </td>
+						</tr>
+						<tr>
+							<td>Mitchell</td>
+							<td>Joan</td>
+							<td>1925</td>
+							<td>1992</td>
+							<td>American</td>
+							<td><a class="btn btn-warning" href="art-ist.html">Modifier</a> &nbsp;
+								<a class="btn btn-danger" href="#">Supprimer</a> </td>
+						</tr>
+						<tr>
+							<td>Münter</td>
+							<td>Gabriele</td>
+							<td>1877</td>
+							<td>1962</td>
+							<td>German</td>
+							<td><a class="btn btn-warning" href="art-ist.html">Modifier</a> &nbsp;
+								<a class="btn btn-danger" href="#">Supprimer</a> </td>
+						</tr>
+						<tr>
+							<td>Pollock</td>
+							<td>Jackson</td>
+							<td>1912</td>
+							<td>1956</td>
+							<td>American</td>
+							<td><a class="btn btn-warning" href="art-ist.html">Modifier</a> &nbsp;
+								<a class="btn btn-danger" href="#">Supprimer</a> </td>
+						</tr>
+						<tr>
+							<td>Raphaël</td>
+							<td>Raffaello Sanzio da Urbino</td>
+							<td>1483</td>
+							<td>1520</td>
+							<td>Italian</td>
+							<td><a class="btn btn-warning" href="art-ist.html">Modifier</a> &nbsp;
+								<a class="btn btn-danger" href="#">Supprimer</a> </td>
+						</tr>
+						<tr>
+							<td>Rothko</td>
+							<td>Mark</td>
+							<td>1903</td>
+							<td>1970</td>
+							<td>American</td>
+							<td><a class="btn btn-warning" href="art-ist.html">Modifier</a> &nbsp;
+								<a class="btn btn-danger" href="#">Supprimer</a> </td>
+						</tr>
+						<tr>
+							<td>Sorolla y Bastida</td>
+							<td>Joaquin</td>
+							<td>1863</td>
+							<td>1923</td>
+							<td>Spanish</td>
+							<td><a class="btn btn-warning" href="art-ist.html">Modifier</a> &nbsp;
+								<a class="btn btn-danger" href="#">Supprimer</a> </td>
+						</tr>
+						<tr>
+							<td>Stichbury</td>
+							<td>Peter</td>
+							<td>1969</td>
+							<td>-</td>
+							<td>New-Zelander</td>
+							<td><a class="btn btn-warning" href="art-ist.html">Modifier</a> &nbsp;
+								<a class="btn btn-danger" href="#">Supprimer</a> </td>
+						</tr>
+						<tr>
+							<td>Twombly</td>
+							<td>Cy</td>
+							<td>1928</td>
+							<td>2011</td>
+							<td>American</td>
+							<td><a class="btn btn-warning" href="art-ist.html">Modifier</a> &nbsp;
+								<a class="btn btn-danger" href="#">Supprimer</a> </td>
+						</tr>
+						<tr>
+							<td>Ufan</td>
+							<td>Lee</td>
+							<td>1936</td>
+							<td>--</td>
+							<td>South Korean</td>
+							<td><a class="btn btn-warning" href="art-ist.html">Modifier</a> &nbsp;
+								<a class="btn btn-danger" href="#">Supprimer</a> </td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<!-- contextual footer -->
+			<footer class="artits__footer mb-5">
+				<nav class="navbar navbar-expand-lg navbar-dark bg-light">
+					<ul class="navbar-nav mr-auto ml-2 mt-md-0">
+						<li class="nav-item active">
+							<a href="#top" class="btn btn-dark">
+								<span class="fa fa-arrow-circle-up mr-2"></span>Haut de page
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="#!" class="btn btn-primary">
+								<span class="fa fa-print mr-2"></span>Imprimer
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="art-ist.html" class="btn btn-primary">
+								<span class="fa fa-plus-circle mr-2"></span>Ajouter
+							</a>
+						</li>
+					</ul>
+					<form class="form-inline my-2 my-lg-0">
+						<input class="form-control mr-sm-2" type="text" placeholder="Recherche...">
+					</form>
+				</nav>
+			</footer>
+
+        </div>
+        
+	</main>
+
+    <!-- FOOTER -->        
+    <!--#include file="partials/footer.shtml" -->
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+.artwork__img {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+
+  img {
+    height: 64px;
+    order: 1;
+  }
+  
+  label,
+  button {
+    padding: 5px 10px;
+    height: auto;
+    
+    &:hover {
+      background-color: lightgoldenrodyellow;
+    }
+    
+    &:active {
+      background-color: lightblue;
+    }
+  }
+
+  li,
+  div>p {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    list-style-type: none;
+  }
+
+  ol {
+    padding-left: 0;
+  }
+
+  p {
+    line-height: 32px;
+    padding-left: 10px;
+  }
+}

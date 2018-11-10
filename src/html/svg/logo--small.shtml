@@ -1,0 +1,13 @@
+<svg width="50" height="70" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+<!-- Created with SVG-edit - https://github.com/SVG-Edit/svgedit-->
+    <title>Logo</title>
+    <g class="layer">
+        <title>Layer 1</title>
+        <g id="svg_21">
+            <path stroke="#ccc7e5" fill="none" stroke-width="3" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" d="m30.56994,37.42161l13.1399,7.34629l-13.1051,7.46297l-0.03481,-14.80926z" id="svg_20"/>
+            <path stroke="#000000" fill="none" stroke-width="3" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" opacity="0.5" d="m6.64694,67.45564l18.73903,-61.99349l18.73903,61.99349l-37.47806,0z" id="svg_12"/>
+            <path stroke="#000000" fill="none" stroke-width="3" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" d="m16.93331,33.79426l8.48093,-28.73177l8.48093,28.73177l-16.96186,0z" id="svg_14"/>
+            <path stroke="#352289" fill="none" stroke-width="3" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" d="m6.85206,67.14504l9.67578,-32.0997l16.07695,26.80645l-25.75274,5.29325l0,0z" id="svg_18"/>
+        </g>
+    </g>
+</svg>
