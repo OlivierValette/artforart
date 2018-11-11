@@ -91,7 +91,7 @@ $loctypes = getAllEntities("location_type");
                                             <input type="text" class="form-control input"
                                                    id="artwork__title"
                                                    name="title"
-                                                   placeholder="Lepanto VII" required>
+                                                   placeholder="" required>
                                         </div>
                                 </div>
                                 <div class="form-group row">
