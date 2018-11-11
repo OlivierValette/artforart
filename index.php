@@ -1,8 +1,18 @@
-<!-- HEAD -->
-<?php require_once __DIR__ . "/layout/head.php"; ?>
+<?php
+// parameters retrieval
+require_once __DIR__ . "/config/parameters.php";
+// security check (sign-in)
+require_once __DIR__ . "/security.php";
 
-<!-- HEADER : top navbar -->
-<?php require_once __DIR__ . "/layout/header.php"; ?>
+require_once __DIR__ . "/model/database.php";
+
+// HEAD
+require_once __DIR__ . "/layout/head.php";
+
+// HEADER : top navbar
+require_once __DIR__ . "/layout/header.php";
+
+?>
 
 <main class="container-fluid">
     <div class="row align-items-start">

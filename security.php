@@ -10,13 +10,14 @@ if (isset($_POST["mail"]) && isset($_POST["pwd"])) {
     $password = $_POST["pwd"];
 
     // retrieve user in database
-    $user = getUserByEmailPassword($email,$password);
+    $user = getUserByEmailPassword($email, $password);
 
     // keep user in session
     if (isset($user["id"])) {
         $_SESSION["id"] = $user["id"];
     }
-elseif (isset($_SESSION["id"])) {
+
+} elseif (isset($_SESSION["id"])) {
     // user is already connected
     $user = getAllEntities("user", $_SESSION["id"]);
 }
@@ -27,6 +28,7 @@ if (!$user) {
 }
 
 // Non admin users redirection to main site
-if (!$user["admin"]) {
+if (!$user["is_admin"]) {
+    // TODO Create a main site index page (at least !)
     header("Location: ../");
 }

@@ -22,6 +22,7 @@ try {
 // Functions with SQL queries
 
 // Standard functions
+// TODO Organize standard functions in separate files in a lib directory
 
 /** Count number of rows in table
  * @param string $table Table name
