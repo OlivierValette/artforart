@@ -1,8 +1,13 @@
-<!-- HEAD -->
-<?php require_once __DIR__ . "/layout/head.php"; ?>
+<?php
 
-<!-- HEADER : top navbar -->
-<?php require_once __DIR__ . "/layout/header.php"; ?>
+// HEAD
+require_once __DIR__ . "/layout/head.php";
+// HEADER : top navbar
+require_once __DIR__ . "/layout/header.php";
+
+$movements = getAllEntities("movement");
+
+?>
 	
 	<main class="container-fluid">
 		<div class="row align-items-start">
@@ -54,125 +59,17 @@
 						</tr>
 					</thead>
 					<tbody>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/Peinture_acad%C3%A9mique" class="mw-redirect" title="Peinture académique">Peinture académique</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/Art_abstrait" title="Art abstrait">Art abstrait</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/Abstraction_lyrique" title="Abstraction lyrique">Abstraction lyrique</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/Abstraction_po%C3%A9tique" title="Abstraction poétique">Abstraction poétique</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/Art_fractal" title="Art fractal">Art fractal</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/w/index.php?title=Art_immersif&amp;action=edit&amp;redlink=1" class="new" title="Art immersif (page inexistante)">Art immersif</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/Action_painting" title="Action painting">Action painting</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/A%C3%A9ropeinture" title="Aéropeinture">Aéropeinture</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/Arte_Povera" class="mw-redirect" title="Arte Povera">Arte Povera</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/Arts_%26_Crafts" title="Arts &amp; Crafts">Arts &amp; Crafts</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/Ash_Can_School" title="Ash Can School">Ash Can School</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/Automatistes" title="Automatistes">Automatistes</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/Peinture_baroque" title="Peinture baroque">Baroque</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/Bauhaus" title="Bauhaus">Bauhaus</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/Art_brut" title="Art brut">Art brut</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/Bad_painting" class="mw-redirect" title="Bad painting">Bad painting</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/Caravagisme" title="Caravagisme">Caravagisme</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/Art_cin%C3%A9tique" title="Art cinétique">Art cinétique</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/Classicisme" title="Classicisme">Classicisme</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/Cobra_(mouvement)" title="Cobra (mouvement)">Cobra</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/Colorfield_Painting" class="mw-redirect" title="Colorfield Painting">Colorfield Painting</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/Art_conceptuel" title="Art conceptuel">Art conceptuel</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/Art_concret" title="Art concret">Art concret</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/Art_corporel" title="Art corporel">Art corporel</a> (Body Art)</td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/Constructivisme_russe" title="Constructivisme russe">Constructivisme</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/Cubisme" title="Cubisme">Cubisme</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/Cubisme_analytique" title="Cubisme analytique">Cubisme analytique</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/Cubisme_orphique" class="mw-redirect" title="Cubisme orphique">Cubisme orphique</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/Cubisme_synth%C3%A9tique" title="Cubisme synthétique">Cubisme synthétique</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/Dada%C3%AFsme" class="mw-redirect" title="Dadaïsme">Dadaïsme</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/D%C3%A9constructivisme" title="Déconstructivisme">Déconstructivisme</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/Art_d%C3%A9co" title="Art déco">Art déco</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/De_Stijl" title="De Stijl">De Stijl</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/Divisionnisme" title="Divisionnisme">Divisionnisme</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/%C3%89cole_de_Barbizon" title="École de Barbizon">École de Barbizon</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/%C3%89cole_de_Crozant" title="École de Crozant">École de Crozant</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/%C3%89cole_du_Danube" title="École du Danube">École du Danube</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/%C3%89cole_de_Lyon_(peinture)" title="École de Lyon (peinture)">École de Lyon</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/Expressionnisme" title="Expressionnisme">Expressionnisme</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/Expressionnisme_abstrait" title="Expressionnisme abstrait">Expressionnisme abstrait</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/%C3%89cole_de_Londres" class="mw-redirect" title="École de Londres">École de Londres</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/Fauvisme" title="Fauvisme">Fauvisme</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/Art_figuratif" title="Art figuratif">Art figuratif</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/Figuration_Libre" class="mw-redirect" title="Figuration Libre">Figuration Libre</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/Figuration_narrative" title="Figuration narrative">Figuration narrative</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/Futurisme" title="Futurisme">Futurisme</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/Peinture_gothique" title="Peinture gothique">Peinture gothique</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/Graffiti" title="Graffiti">Graffiti</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/Gutai" title="Gutai">Gutai</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/Harlem_Renaissance" class="mw-redirect" title="Harlem Renaissance">Harlem Renaissance</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/Hyperr%C3%A9alisme" title="Hyperréalisme">Hyperréalisme</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/Impressionnisme" title="Impressionnisme">Impressionnisme</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/Peinture_informelle" title="Peinture informelle">Peinture informelle</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/Luminisme" title="Luminisme">Luminisme</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/Mani%C3%A9risme" title="Maniérisme">Maniérisme</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/Minimalisme_(art)" title="Minimalisme (art)">Minimalisme</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/Modernisme" title="Modernisme">Modernisme</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/Muralisme" class="mw-redirect" title="Muralisme">Muralisme</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/Marouflage" title="Marouflage">Marouflage</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/Nabi_(peinture)" title="Nabi (peinture)">Nabi</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/Art_na%C3%AFf" title="Art naïf">Art naïf</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/Naturalisme_(peinture)" title="Naturalisme (peinture)">Naturalisme</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/N%C3%A9oclassicisme" class="mw-redirect" title="Néoclassicisme">Néoclassicisme</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/N%C3%A9o-expressionnisme" title="Néo-expressionnisme">Néo-expressionnisme</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/N%C3%A9o-g%C3%A9o" title="Néo-géo">Néo-géo</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/N%C3%A9oplasticisme" title="Néoplasticisme">Néoplasticisme</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/N%C3%A9o_pop" title="Néo pop">Néo pop</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/Peinture_non_figurative" title="Peinture non figurative">Peinture non figurative</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/Art_nouveau" title="Art nouveau">Art nouveau</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/Nouveaux_Fauves" title="Nouveaux Fauves">Nouveaux Fauves</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/Nouveau_r%C3%A9alisme" title="Nouveau réalisme">Nouveau réalisme</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/Nouvelle_figuration" title="Nouvelle figuration">Nouvelle figuration</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/Nouvelle_Objectivit%C3%A9" title="Nouvelle Objectivité">Nouvelle Objectivité</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/Op_Art" title="Op Art">Op Art</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/Orientalisme" title="Orientalisme">Orientalisme</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/Orphisme_(art)" title="Orphisme (art)">Orphisme</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/Oupeinpo" class="mw-redirect" title="Oupeinpo">Oupeinpo</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/Outer-Art" title="Outer-Art">Outer-Art</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/Peinture_non_figurative" title="Peinture non figurative">Peinture non figurative</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/Peinture_m%C3%A9taphysique" title="Peinture métaphysique">Pittura Metafisica</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/Pointillisme" title="Pointillisme">Pointillisme</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/Pop_art" title="Pop art">Pop art</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/Postimpressionnisme" title="Postimpressionnisme">Postimpressionnisme</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/Postmodernisme" title="Postmodernisme">Postmodernisme</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/Pr%C3%A9cisionnisme" title="Précisionnisme">Précisionnisme</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/Pr%C3%A9cubisme" title="Précubisme">Précubisme</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/Art_premier" title="Art premier">Art premier/Art primitif</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/Pr%C3%A9rapha%C3%A9lisme" title="Préraphaélisme">Préraphaélisme</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/Primitivisme" title="Primitivisme">Primitivisme</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/Purisme_(art)" title="Purisme (art)">Purisme</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/Art_qajar" title="Art qajar">Art qajar</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/Rayonnisme" title="Rayonnisme">Rayonnisme</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/R%C3%A9alisme_(peinture)" title="Réalisme (peinture)">Réalisme</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/w/index.php?title=Remodernisme&amp;action=edit&amp;redlink=1" class="new" title="Remodernisme (page inexistante)">Remodernisme</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/Peinture_de_la_Renaissance" title="Peinture de la Renaissance">Renaissance</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/Rococo" title="Rococo">Rococo</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/Romanistes_(peinture)" title="Romanistes (peinture)">Romanistes</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/Peinture_romantique" title="Peinture romantique">Peinture romantique</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/Art_rupestre" title="Art rupestre">Art rupestre</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/Sch%C3%A9matisme" title="Schématisme">Schématisme</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/Shin-Hanga" title="Shin-Hanga">Shin-Hanga</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/Art_singulier" title="Art singulier">Singulier (art)</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/Street_art" class="mw-redirect" title="Street art">Street art</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/Stridentisme" title="Stridentisme">Stridentisme</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/Stuckisme" title="Stuckisme">Stuckisme</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/Sumi-e" title="Sumi-e">Sumi-e</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/Supr%C3%A9matisme" title="Suprématisme">Suprématisme</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/Surr%C3%A9alisme" title="Surréalisme">Surréalisme</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/Symbolisme_(art)" title="Symbolisme (art)">Symbolisme</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/Synchromisme" title="Synchromisme">Synchromisme</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/Tachisme" title="Tachisme">Tachisme</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/T%C3%A9n%C3%A9brisme" title="Ténébrisme">Ténébrisme</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/Mouvement_Trompe-l%27%C5%93il/R%C3%A9alit%C3%A9" title="Mouvement Trompe-l&#39;œil/Réalité">Mouvement Trompe-l'œil/Réalité</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/Trans-avant-garde" title="Trans-avant-garde">Trans-avant-garde</a></td></tr>
-						<tr><td><i><a href="https://fr.wikipedia.org/wiki/Ukiyo-e" title="Ukiyo-e">Ukiyo-e</a></i></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/w/index.php?title=Vermeulenisme&amp;action=edit&amp;redlink=1" class="new" title="Vermeulenisme (page inexistante)">Vermeulenisme</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/V%C3%A9dutisme" title="Védutisme">Védutisme</a></td></tr>
-						<tr><td><a href="https://fr.wikipedia.org/wiki/Vorticisme" title="Vorticisme">Vorticisme</a></td></tr>
-						<tr><td><i><a href="https://fr.wikipedia.org/wiki/Yamato-e" title="Yamato-e">Yamato-e</a></i></td></tr>
+                        <?php foreach($movements as $movement) : ?>
+						<tr>
+                            <td>
+                                <a href="<?= $movement['wikipedia_url']; ?>"
+                                   class="mw-redirect"
+                                   title="<?= $movement['label']; ?>" >
+                                    <?= $movement['label']; ?>
+                                </a>
+                            </td>
+                        </tr>
+                        <?php endforeach; ?>
 					</tbody>
 				</table>
 			</section>

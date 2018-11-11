@@ -13,19 +13,22 @@
                         </a>
                     </div>
                     <p class="lead">Connexion requise...</p>
-                    <form class="login" action="art-board.html" method="get">
+                    <form class="login" action="index.html" method="post">
                         <div class="form-group">
-                            <input type="email" class="form-control" id="login__unsername" placeholder="Email" autofocus="" required>
+                            <input type="email" name="mail" class="form-control" id="login__unsername" placeholder="Email" autofocus="" required>
                         </div>
                         <div class="form-group">
-                            <input type="password" class="form-control" id="login__password" placeholder="Mot de passe" autofocus="" required>
+                            <input type="password" name ="pwd" class="form-control" id="login__password" placeholder="Mot de passe" autofocus="" required>
                         </div>
-                        <button class="btn btn-secondary btn-lg">Connexion <span class="fa fa-play-circle ml-2"></span></button>
+                        <button class="btn btn-secondary btn-lg" type="submit">
+                            Connexion
+                            <span class="fa fa-play-circle ml-2"></span>
+                        </button>
                     </form>
                     <p class="mt-4">
-                        <a href="mailto:admin@artforartshake.com?subject=Demande%20de%20code">Demande de code d'accès</a>
+                        <a href="mailto:admin@artforart.com?subject=Demande%20de%20code">Demande de code d'accès</a>
                         &nbsp;&nbsp; &bullet; &nbsp;
-                        <a href="mailto:admin@artforartshake.com?subject=Oubli%20password">Mot de passe oublié</a>
+                        <a href="mailto:admin@artforart.com?subject=Oubli%20password">Mot de passe oublié</a>
                     </p>
                 </div>
             </div>
