@@ -27,6 +27,6 @@ if (isset($_SESSION["id"])) {
     <link href="<?= SITE_URL; ?>dist/css/styles.min.css" rel="stylesheet">
 
 
-    <!-- title à rendre dynamique -->
+    <!-- TODO title à rendre dynamique -->
     <title>ArtforArt admin board</title>
 </head>

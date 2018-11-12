@@ -82,16 +82,21 @@ $artworks = getAllEntities("artwork");
                         <?php foreach($artworks as $artwork) : ?>
                             <tr>
                                 <?php $artist = getAllEntities("artist", $artwork["artist_id"]); ?>
+                                <?php $nationality = getAllEntities("nationality", $artist["nationality_id"]); ?>
                                 <td><?= $artist["lastname"]; ?>, <?= $artist["firstname"]; ?></td>
-                                <td>Franco-Belgian,<?= $artist["birthyear"]; ?>-<?= $artist["deathyear"]; ?></td>
+                                <td><?= $nationality["label"]; ?>, <?= $artist["birthyear"]; ?>-<?= $artist["deathyear"]; ?></td>
                                 <td><?= $artwork["title"]; ?></td>
                                 <td><?= $artwork["year_created"]; ?></td>
-                                <td><a class="btn btn-outline-success" href="<?= ASSETS_URL . $artwork["photo"] ?>">
+                                <td>
+                                    <a class="btn btn-outline-success" href="<?= ASSETS_URL . $artwork["photo"] ?>">
                                         <span class="fa fa-file-image"></span>
                                     </a>
                                 </td>
-                                <td><a class="btn btn-warning" href="art-work.html">Modifier</a> &nbsp;
-                                    <a class="btn btn-danger" href="#">Supprimer</a> </td>
+                                <td>
+                                    <a class="btn btn-warning" href="crud/artwork/update-form.php">Modifier</a>
+                                    &nbsp;
+                                    <a class="btn btn-danger" href="crud/artwork/delete-query.php">Supprimer</a>
+                                </td>
                             </tr>
                         <?php endforeach; ?>
                         </tbody>

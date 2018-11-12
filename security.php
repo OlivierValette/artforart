@@ -6,10 +6,10 @@ session_start();
 
 $user = [];
 
-if (isset($_POST["mail"]) && isset($_POST["pwd"])) {
+if (isset($_POST["login-mail"]) && isset($_POST["login-pwd"])) {
     // coming from login page
-    $email = $_POST["mail"];
-    $password = $_POST["pwd"];
+    $email = $_POST["login-mail"];
+    $password = $_POST["login-pwd"];
 
     // retrieve user in database
     $user = getUserByEmailPassword($email, $password);
