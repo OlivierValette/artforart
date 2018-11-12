@@ -1,10 +1,9 @@
 <?php
 // parameters retrieval
 require_once __DIR__ . "/config/parameters.php";
+
 // security check (sign-in)
 require_once __DIR__ . "/security.php";
-
-require_once __DIR__ . "/model/database.php";
 
 // HEAD
 require_once __DIR__ . "/layout/head.php";
@@ -12,6 +11,8 @@ require_once __DIR__ . "/layout/head.php";
 // HEADER : top navbar
 require_once __DIR__ . "/layout/header.php";
 
+require_once __DIR__ . "/model/database.php";
+$artworks = getAllEntities("artwork");
 ?>
 
 <main class="container-fluid">
@@ -25,6 +26,7 @@ require_once __DIR__ . "/layout/header.php";
             <!-- contextual header -->
             <header class="artboard__header mt-3 mb-3">
                 <!-- Stats -->
+                <?php // TODO Gérer les stats ?>
                 <div class="alert alert-primary lead" role="alert">
                     <strong>1493</strong> &oelig;uvres - <strong>347</strong> artistes
                 </div>
@@ -77,162 +79,21 @@ require_once __DIR__ . "/layout/header.php";
                         </tr>
                         </thead>
                         <tbody class="artwork__list">
-                        <tr>
-                            <td>Alechinsky, Pierre</td>
-                            <td>Franco-Belgian,1927-</td>
-                            <td>Ephémérides brouillées</td>
-                            <td>1980</td>
-                            <td><a class="btn btn-outline-success" href="../assets/Alechinsky, Pierre (Franco-Belgian,1927-) - Ephémérides brouillées, 1980.jpg">
-                                    <span class="fa fa-file-image"></span>
-                                </a>
-                            </td>
-                            <td><a class="btn btn-warning" href="art-work.html">Modifier</a> &nbsp;
-                                <a class="btn btn-danger" href="#">Supprimer</a> </td>
-                        </tr>
-                        <tr>
-                            <th>A</th>
-                            <td>Avery, Milton Clarck</td>
-                            <td>American, 1885-1965</td>
-                            <td>Dancing Trees</td>
-                            <td>1960</td>
-                            <td><a class="btn btn-outline-success" href="../assets/Avery, Milton Clarck (American, 1885-1965) - Dancing Trees, 1960.jpg">
-                                    <span class="fa fa-file-image"></span>
-                                </a>
-                            </td>
-                            <td><a class="btn btn-warning" href="art-work.html">Modifier</a> &nbsp;
-                                <a class="btn btn-danger" href="#">Supprimer</a> </td>
-                        </tr>
-                        <tr>
-                            <th>B</th>
-                            <td>Beckmann, Max</td>
-                            <td>German, 1884-1950</td>
-                            <td>The Bath</td>
-                            <td>1930</td>
-                            <td><a class="btn btn-outline-success" href="../assets/Beckmann, Max (German, 1884-1950) - The Bath, 1930.jpg">
-                                    <span class="fa fa-file-image"></span>
-                                </a>
-                            </td>
-                            <td><a class="btn btn-warning" href="art-work.html">Modifier</a> &nbsp;
-                                <a class="btn btn-danger" href="#">Supprimer</a> </td>
-                        </tr>
-                        </tr>
-                        <tr>
-                            <th>M</th>
-                            <td>Mitchell, Joan</td>
-                            <td>American, 1925-1992</td>
-                            <td>Untitled</td>
-                            <td>1991</td>
-                            <td><a class="btn btn-outline-success" href="../assets/Mitchell, Joan (American, 1925-1992) - Untitled, 1991.jpg">
-                                    <span class="fa fa-file-image"></span>
-                                </a>
-                            </td>
-                            <td><a class="btn btn-warning" href="art-work.html">Modifier</a> &nbsp;
-                                <a class="btn btn-danger" href="#">Supprimer</a> </td>
-                        </tr>
-                        <tr>
-                            <th>M</th>
-                            <td>Münter, Gabriele</td>
-                            <td>German, 1877-1962</td>
-                            <td>Kirche an der Ramsach</td>
-                            <td>1935</td>
-                            <td><a class="btn btn-outline-success" href="../assets/Münter, Gabriele (German, 1877-1962) - Kirche an der Ramsach, 1935.jpg">
-                                    <span class="fa fa-file-image"></span>
-                                </a>
-                            </td>
-                            <td><a class="btn btn-warning" href="art-work.html">Modifier</a> &nbsp;
-                                <a class="btn btn-danger" href="#">Supprimer</a> </td>
-                        </tr>
-                        <tr>
-                            <th>P</th>
-                            <td>Pollock, Jackson</td>
-                            <td>American, 1912-1956</td>
-                            <td>No. 8</td>
-                            <td>1949</td>
-                            <td><a class="btn btn-outline-success" href="../assets/Pollock, Jackson (American, 1912-1956) - No. 8, 1949.jpg">
-                                    <span class="fa fa-file-image"></span>
-                                </a>
-                            </td>
-                            <td><a class="btn btn-warning" href="art-work.html">Modifier</a> &nbsp;
-                                <a class="btn btn-danger" href="#">Supprimer</a> </td>
-                        </tr>
-                        <tr>
-                            <th>R</th>
-                            <td>Raphaël, Raffaello Sanzio da Urbino</td>
-                            <td>Italian, 1483-1520</td>
-                            <td>Desposizione</td>
-                            <td>1507</td>
-                            <td><a class="btn btn-outline-success" href="../assets/Raphaël, Raffaello Sanzio da Urbino (Italian, 1483-1520)  - Desposizione, 1507.jpg">
-                                    <span class="fa fa-file-image"></span>
-                                </a>
-                            </td>
-                            <td><a class="btn btn-warning" href="art-work.html">Modifier</a> &nbsp;
-                                <a class="btn btn-danger" href="#">Supprimer</a> </td>
-                        </tr>
-                        <tr>
-                            <th>R</th>
-                            <td>Rothko, Mark</td>
-                            <td>American, 1903-1970</td>
-                            <td>Black on Grey</td>
-                            <td>1969</td>
-                            <td><a class="btn btn-outline-success" href="../assets/Rothko, Mark (American, 1903-1970) - Black on Grey, 1969.jpg">
-                                    <span class="fa fa-file-image"></span>
-                                </a>
-                            </td>
-                            <td><a class="btn btn-warning" href="art-work.html">Modifier</a> &nbsp;
-                                <a class="btn btn-danger" href="#">Supprimer</a> </td>
-                        </tr>
-                        <tr>
-                            <th>S</th>
-                            <td>Sorolla y Bastida, Joaquín</td>
-                            <td>Spanish, 1863-1923</td>
-                            <td>Retour de pêche, le halage de la barque</td>
-                            <td>1894</td>
-                            <td><a class="btn btn-outline-success" href="../assets/Sorolla y Bastida, Joaquín (Spanish, 1863-1923) - Retour de pêche, le halage de la barque, 1894.jpg">
-                                    <span class="fa fa-file-image"></span>
-                                </a>
-                            </td>
-                            <td><a class="btn btn-warning" href="art-work.html">Modifier</a> &nbsp;
-                                <a class="btn btn-danger" href="#">Supprimer</a> </td>
-                        </tr>
-                        <tr>
-                            <th>S</th>
-                            <td>Stichbury, Peter</td>
-                            <td>New Zealand, 1969-</td>
-                            <td>Zach Klein</td>
-                            <td>2008</td>
-                            <td><a class="btn btn-outline-success" href="../assets/Stichbury, Peter (New Zealand, 1969-) - Zach Klein, 2008.jpg">
-                                    <span class="fa fa-file-image"></span>
-                                </a>
-                            </td>
-                            <td><a class="btn btn-warning" href="art-work.html">Modifier</a> &nbsp;
-                                <a class="btn btn-danger" href="#">Supprimer</a> </td>
-                        </tr>
-                        <tr>
-                            <th>T</th>
-                            <td>Twombly, Cy</td>
-                            <td>American, 1928-2011</td>
-                            <td>Lepanto VII</td>
-                            <td>2001</td>
-                            <td><a class="btn btn-outline-success" href="../assets/Twombly, Cy (American, 1928-2011) - Lepanto VII, 2001.jpg">
-                                    <span class="fa fa-file-image"></span>
-                                </a>
-                            </td>
-                            <td><a class="btn btn-warning" href="art-work.html">Modifier</a> &nbsp;
-                                <a class="btn btn-danger" href="#">Supprimer</a> </td>
-                        </tr>
-                        <tr>
-                            <th>U</th>
-                            <td>Ufan, Lee</td>
-                            <td>South Korean, 1936-</td>
-                            <td>With Winds</td>
-                            <td>1984</td>
-                            <td><a class="btn btn-outline-success" href="../assets/Ufan, Lee (South Korean, 1936-) - With Winds, 1984.jpg">
-                                    <span class="fa fa-file-image"></span>
-                                </a>
-                            </td>
-                            <td><a class="btn btn-warning" href="art-work.html">Modifier</a> &nbsp;
-                                <a class="btn btn-danger" href="#">Supprimer</a> </td>
-                        </tr>
+                        <?php foreach($artworks as $artwork) : ?>
+                            <tr>
+                                <?php $artist = getAllEntities("artist", $artwork["artist_id"]); ?>
+                                <td><?= $artist["lastname"]; ?>, <?= $artist["firstname"]; ?></td>
+                                <td>Franco-Belgian,<?= $artist["birthyear"]; ?>-<?= $artist["deathyear"]; ?></td>
+                                <td><?= $artwork["title"]; ?></td>
+                                <td><?= $artwork["year_created"]; ?></td>
+                                <td><a class="btn btn-outline-success" href="<?= ASSETS_URL . $artwork["photo"] ?>">
+                                        <span class="fa fa-file-image"></span>
+                                    </a>
+                                </td>
+                                <td><a class="btn btn-warning" href="art-work.html">Modifier</a> &nbsp;
+                                    <a class="btn btn-danger" href="#">Supprimer</a> </td>
+                            </tr>
+                        <?php endforeach; ?>
                         </tbody>
                     </table>
                 </div>

@@ -35,6 +35,6 @@
         </div>
     </div>
 
-</body>
-</html>
+<!-- Footer -->
+<?php require_once __DIR__ . "/layout/footer.php"; ?>
 

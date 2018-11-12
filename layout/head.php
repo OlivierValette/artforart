@@ -24,8 +24,8 @@ if (isset($_SESSION["id"])) {
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400i,700" rel="stylesheet">
 
     <!-- Global css -->
-    <link rel="stylesheet" href="css/styles.min.css">
-    <link rel="stylesheet" href="css/font-awesome.css">
+    <link href="<?= SITE_URL; ?>dist/css/styles.min.css" rel="stylesheet">
+
 
     <!-- title à rendre dynamique -->
     <title>ArtforArt admin board</title>

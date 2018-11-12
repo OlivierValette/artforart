@@ -4,6 +4,8 @@ require_once __DIR__ . "/model/database.php";
 
 session_start();
 
+$user = [];
+
 if (isset($_POST["mail"]) && isset($_POST["pwd"])) {
     // coming from login page
     $email = $_POST["mail"];

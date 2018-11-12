@@ -1,7 +1,11 @@
 @charset "utf-8";
 
 // LIBRARIES
-@import url("../../node_modules/bootstrap/dist/css/bootstrap.min.css");
+@import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+@import "../../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
+@import "../../node_modules/select2/dist/css/select2.min.css";
+@import "../../node_modules/datatables.net-bs4/css/dataTables.bootstrap4.min.css";
+
 
 // HELPERS
 @import "./helpers/extends";
