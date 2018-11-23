@@ -3,7 +3,7 @@
 require_once __DIR__ . "/../config/parameters.php";
 require_once __DIR__ . "/../model/database.php";
 
-session_start();
+// session_start();
 
 if (isset($_SESSION["id"])) {
     $user = getAllEntities("user", $_SESSION["id"]);
